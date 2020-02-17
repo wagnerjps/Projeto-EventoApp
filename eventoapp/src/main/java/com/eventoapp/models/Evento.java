@@ -10,9 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotEmpty;
 
-import org.hibernate.annotations.GenericGenerator;
-
-@Entity  //Definir o objeto como entidade para o Hibernate
+@Entity
 public class Evento implements Serializable{
 	
 	/**
@@ -21,16 +19,9 @@ public class Evento implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	//Atributos
-	@Id									//Definir atributo ID
-	@GeneratedValue(					//Forçar a geração automática do ID
-	    strategy= GenerationType.AUTO,
-	    generator="native"
-	)
-	@GenericGenerator(					//Solicitar a geração automática
-	    name = "native",
-	    strategy = "native"
-	)
-	private Long codigo;				//Campo que será o ID da tabela
+	@Id													//Definir atributo ID
+	@GeneratedValue(strategy= GenerationType.AUTO) 		//Forçar a geração automática do ID
+	private Long codigo;								//Campo que será o ID da tabela
 
 	@OneToMany
 	private List<Convidado> convidados;
