@@ -53,7 +53,6 @@ public class DataConfiguration {
         String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
 
         BasicDataSource basicDataSource = new BasicDataSource();
-        //basicDataSource.setDriverClassName("org.postgresql.Driver");
         basicDataSource.setUrl(dbUrl);
         basicDataSource.setUsername(username);
         basicDataSource.setPassword(password);
