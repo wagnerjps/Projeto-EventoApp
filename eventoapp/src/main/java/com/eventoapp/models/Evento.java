@@ -16,9 +16,7 @@ import javax.validation.constraints.NotEmpty;
 @Table(name = "evento")
 public class Evento implements Serializable{
 	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	
 	//Atributos
