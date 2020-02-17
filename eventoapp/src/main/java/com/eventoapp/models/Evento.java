@@ -11,8 +11,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
+/***
 @Entity
 @Table(name = "evento")
+***/
 public class Evento implements Serializable{
 	
 	/**
@@ -20,21 +22,24 @@ public class Evento implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	/***
 	//Atributos
 	@Id													//Definir atributo ID
 	@GeneratedValue(strategy= GenerationType.AUTO) 		//Forçar a geração automática do ID
+	***/
 	private Long codigo;								//Campo que será o ID da tabela
 
-	@OneToMany
+	
+	//@OneToMany
 	private List<Convidado> convidados;
 	
-	@NotEmpty
+	//@NotEmpty
 	private String nome;
-	@NotEmpty
+	///@NotEmpty
 	private String local;
-	@NotEmpty
+	//@NotEmpty
 	private String data;
-	@NotEmpty
+	//@NotEmpty
 	private String horario;
 	
 	//Getters and Setters

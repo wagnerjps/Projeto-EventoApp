@@ -9,9 +9,10 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
 import javassist.SerialVersionUID;
-
+/***
 @Entity
 @Table(name = "convidado")
+***/
 public class Convidado extends SerialVersionUID {
 	
 	/**
@@ -19,16 +20,16 @@ public class Convidado extends SerialVersionUID {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	@Id													//Definir atributo ID
-	@GeneratedValue(strategy= GenerationType.AUTO) 		//Forçar a geração automática do ID
+	//@Id													//Definir atributo ID
+	//@GeneratedValue(strategy= GenerationType.AUTO) 		//Forçar a geração automática do ID
 	private Long codigo;								//Campo que será o ID da tabela
 	
-	@ManyToOne
+	//@ManyToOne
 	private Evento evento;
 	
-	@NotEmpty
+	//@NotEmpty
 	private String rg;
-	@NotEmpty
+	//@NotEmpty
 	private String nomeConvidado;
 	
 	public Evento getEvento() {
