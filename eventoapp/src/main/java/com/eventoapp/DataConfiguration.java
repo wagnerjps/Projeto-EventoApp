@@ -18,7 +18,6 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 public class DataConfiguration {
 	
 	/***
-
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();		//Criação do objeto dataSource para conexão ao banco
