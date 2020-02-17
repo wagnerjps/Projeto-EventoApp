@@ -44,6 +44,8 @@ public class DataConfiguration {
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
         URI dbUri = new URI(System.getenv("DATABASE_URL"));
+        
+        String Uri = "postgres://wzicklktoyutes:b1cf60b24db3351dbe1ae1a6eca1598657c97a6f8de14804271827fe002debed@ec2-18-213-176-229.compute-1.amazonaws.com:5432/d4ocb5mdd6hqp7";
 
         String username = dbUri.getUserInfo().split(":")[0];
         String password = dbUri.getUserInfo().split(":")[1];
@@ -51,10 +53,11 @@ public class DataConfiguration {
         String driver = "org.postgresql.Driver";
         
         BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setDriverClassName(driver);
-        basicDataSource.setUrl(dbUrl);
-        basicDataSource.setUsername(username);
-        basicDataSource.setPassword(password);
+        //basicDataSource.setDriverClassName(driver);
+        //basicDataSource.setUrl(dbUrl);
+        basicDataSource.setUrl(Uri);
+        //basicDataSource.setUsername(username);
+        //basicDataSource.setPassword(password);
 
         return basicDataSource;
     }
