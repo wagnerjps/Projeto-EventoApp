@@ -47,10 +47,17 @@ public class DataConfiguration {
     public BasicDataSource dataSource() throws URISyntaxException {
         URI dbUri = new URI(System.getenv("DATABASE_URL"));
 
+        /***
         String username = dbUri.getUserInfo().split(":")[0];
         String password = dbUri.getUserInfo().split(":")[1];
         String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
-
+        ***/
+        
+        String username = "wzicklktoyutes";
+        String password = "b1cf60b24db3351dbe1ae1a6eca1598657c97a6f8de14804271827fe002debed";
+        String dbUrl = "jdbc:wzicklktoyutes:b1cf60b24db3351dbe1ae1a6eca1598657c97a6f8de14804271827fe002debed@ec2-18-213-176-229.compute-1.amazonaws.com:5432/d4ocb5mdd6hqp7?sslmode=require";
+        
+        
         BasicDataSource basicDataSource = new BasicDataSource();
         basicDataSource.setUrl(dbUrl);
         basicDataSource.setUsername(username);
