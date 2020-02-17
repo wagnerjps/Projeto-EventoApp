@@ -7,9 +7,16 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 
-@Entity
-public class Convidado {
+import javassist.SerialVersionUID;
 
+@Entity
+public class Convidado extends SerialVersionUID {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	@Id													//Definir atributo ID
 	@GeneratedValue(strategy= GenerationType.AUTO) 		//Forçar a geração automática do ID
 	private Long codigo;								//Campo que será o ID da tabela
