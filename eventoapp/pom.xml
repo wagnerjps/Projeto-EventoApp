@@ -94,13 +94,26 @@
 		</dependency>
 		-->
 		 
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>6.1.2.Final</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		    <version>5.1.0.Final</version>
-		    <scope>compile</scope>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.4.12.Final</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>5.4.12.Final</version>
+		</dependency>
+			
 	</dependencies>
 
 	<build>
@@ -111,5 +124,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
