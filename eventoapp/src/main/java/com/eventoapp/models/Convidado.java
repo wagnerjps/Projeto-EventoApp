@@ -9,7 +9,7 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
+//@Entity
 public class Convidado {
 
 	@Id									//Definir atributo ID
