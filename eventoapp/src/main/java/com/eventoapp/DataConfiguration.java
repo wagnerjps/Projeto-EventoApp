@@ -48,8 +48,10 @@ public class DataConfiguration {
         String username = dbUri.getUserInfo().split(":")[0];
         String password = dbUri.getUserInfo().split(":")[1];
         String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
-
+        String driver = "org.postgresql.Driver";
+        
         BasicDataSource basicDataSource = new BasicDataSource();
+        basicDataSource.setDriverClassName(driver);
         basicDataSource.setUrl(dbUrl);
         basicDataSource.setUsername(username);
         basicDataSource.setPassword(password);
