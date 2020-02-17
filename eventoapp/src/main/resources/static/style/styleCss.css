@@ -1,0 +1,126 @@
+.head-logo{
+	margin-left: 10px;
+}
+
+.listaEventos{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+
+.listaEventos table{
+	padding: 10px;
+	color: rgb(158, 158, 158);
+}
+
+.listaEventos table th{
+	padding: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(158, 158, 158);
+}
+/*
+.listaEventos a:link, .listaEventos a:visited {
+	color: rgb(158, 158, 178);
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.listaEventos a:hover, .listaEventos a:active{
+	color: red;
+}
+*/
+
+.listaEventos p{
+	margin: 5px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.listaEventos span{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.cadastroEvento{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+
+.cadastroEvento label{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.cadastroEvento p{
+	margin: 5px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.cadastroEvento span{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.cadastroEvento button{
+	float: right;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+
+
+.detalhesEvento{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+
+.headDetalhes{
+	padding: 10px;
+	color: rgb(158, 158, 158);
+}
+
+.formDetalhes button{
+	float: right;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.tableDetalhes{
+	margin-top: -11px;
+	padding: 10px;
+	color: rgb(158, 158, 158);
+}
+
+.tableDetalhes h5{
+	text-align: center;
+	font-weight: bold;
+}
+
+.detalhesEvento label{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.detalhesEvento p{
+	margin: 5px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.detalhesEvento span{
+	font-size: 16px;
+	font-weight: normal;
+}

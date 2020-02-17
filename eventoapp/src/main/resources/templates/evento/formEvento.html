@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  
+<head>
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="style/styleCss.css" />
+    
+	<title>EventosApp</title>
+</head>	
+	
+<body>
+
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="" class="brand-logo head-logo">Cadastro de Eventos</a>
+				<ul	id="nav-mobile" class="right ride-onmed-on-down">
+					<li><a class="waves-effect waves-light btn" href="eventos"><i class="material-icons left">format_list_bulleted</i>Lista de Eventos</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<br />
+	
+	<div class="container cadastroEvento">
+		
+		<th:block th:include="mensagemValidacao"></th:block>
+		
+		<form method="post">
+			<div class="row">
+				<div class="input-field col s12">
+					<label for="nome">Nome</label>
+					<input placeholder="Nome do Evento" type="text" value="" name="nome" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<label for="local">Local</label>
+					<input placeholder="Local do Evento" type="text" value="" name="local" />
+				</div>
+				<div class="input-field col s3">
+					<label for="data">Data</label>
+					<input placeholder="Data do Evento" type="date" value="" name="data" />
+				</div>
+				<div class="input-field col s3">
+					<label for="horario">Horário</label>
+					<input placeholder="Horário do Evento" type="time" value="" name="horario" />
+				</div>
+			</div>
+			<div class="row">
+			<button class="waves-effect waves-light btn" type="submit">Salvar
+				<i class="material-icons right">send</i>
+			</button>
+			</div>
+		</form>
+	</div>
+	
+	<!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+	
+</html>
